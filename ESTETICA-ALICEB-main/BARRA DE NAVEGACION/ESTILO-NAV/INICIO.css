@@ -8,14 +8,9 @@
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-#carouselExampleIndicators {
- 
-  z-index: -1;
-}
 
-#carouselExampleIndicators:hover {
-  z-index: 1
-}
+
+
 
 
 body{
