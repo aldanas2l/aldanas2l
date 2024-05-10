@@ -6,19 +6,20 @@
 
 .form-registro {
     width: 400px;
-    background: #7f2691;
+    background: #821c5b;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
     font-family: 'calibri';
-    color: rgb(254, 250, 250);
+    color: white;
     box-shadow: 7px 13px 37px #f0e6ef;
 }
 
 .form-registro h4 {
     font-size: 22px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .form-registro .control {
@@ -32,15 +33,19 @@
     font-size: 18px;
 }
 
-.formulario p {
-    height: 40px;
+.form-registro p {
+    height: 20px;
     text-align: center;
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.form-registro a{
+    color: #d54178;
 }
 
 .form-registro a:hover {
-    color: rgb(245, 224, 224);
+    color: white;
     text-decoration: underline;
 }
 
