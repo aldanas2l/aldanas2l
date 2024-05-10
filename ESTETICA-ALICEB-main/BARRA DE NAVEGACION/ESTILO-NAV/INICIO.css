@@ -22,14 +22,13 @@ body{
 .header{
   background: linear-gradient(120deg,#faaaea,rgba(247, 146, 201, 0.644));
   width: auto;
-  height: 100px;
+  height: 90px;
   top: 0;left: 0;
-
  position: sticky;
 }
 .container{
   width: 90%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto; 
 
 }
@@ -49,7 +48,7 @@ body{
   font-size: 25px;
   margin-left: 20px;
  letter-spacing:4px;
- padding: 40px;
+ padding-top: 35px;
 
  
 }
