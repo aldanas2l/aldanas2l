@@ -7,15 +7,16 @@
   box-sizing: border-box;
   font-family: 'Montserrat Alternates', sans-serif;
 }
+.cont-menu {
+  margin-top: 0%;
+}
 
 .d-item{
-  height: 600px;
-
+  height: 500px;
 }
 .d-img{
   height: 100%;
   object-fit: cover;
-
 }
 .active_a{
   background-color: #e77dbf;
