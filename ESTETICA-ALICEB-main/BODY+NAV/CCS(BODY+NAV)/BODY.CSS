@@ -9,8 +9,8 @@
 }
 
 .d-item{
-  height: 650px;
-  margin-top: 10px;
+  height: 600px;
+
 }
 .d-img{
   height: 100%;
@@ -20,4 +20,15 @@
 .active_a{
   background-color: #e77dbf;
 }
+@media(max-width:850px){
+  .d-item{
+    height: 400px;
+ 
+  }
+  .d-img{
+    height: 100%;
+    object-fit: cover;
+  
+  }
+    }
 
