@@ -20,7 +20,7 @@ body{
 }
 
 .header{
-  background: linear-gradient(120deg,#faaaea,rgba(247, 146, 201, 0.644));
+  background: linear-gradient(120deg,#d595c8,rgba(247, 146, 201, 0.644));
   width: auto;
   height: 90px;
   top: 0;left: 0;
@@ -46,8 +46,8 @@ body{
 .logo h1{
   color: hsl(333, 64%, 63%);
   font-weight: 900;
-  font-size: 25px;
-  margin-left: 20px;
+  font-size: 18px;
+  margin-left: 50px;
  letter-spacing:4px;
  padding-top: 35px;
 
@@ -65,7 +65,7 @@ body{
   color: #fff;
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
-  font-size: 16px;
+  font-size: 13px;
   margin-right: 5px;
 }
 .container .menu a:hover{
