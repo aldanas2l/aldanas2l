@@ -6,7 +6,12 @@
   list-style: none;
   box-sizing: border-box;
   font-family: 'Montserrat Alternates', sans-serif;
+
 }
+.row{
+
+align-items:center;
+} 
 
  .product-inner-box .icons{
     display: flex;
@@ -91,16 +96,23 @@ h2{
    font-size: 20px;
 }
 
-@media(max-width: 767px){
+ 
+@media(max-width: 600px){
   .row{
    display: grid;
    gap: 3px;
    grid-template-columns: auto auto;
-                        
- 
 } 
 h2{
    margin-left: 50px;
+}
+.product-inner-box .icons{
+   display: flex;
+   left: 130px;
+   flex-direction: column;
+}
+.cart-btn button{
+   font-size: 10px;
 }
 }
 

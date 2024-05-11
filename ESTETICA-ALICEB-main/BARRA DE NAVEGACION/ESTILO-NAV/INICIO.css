@@ -135,7 +135,7 @@ a {
 
 .header{
   width: auto;
-  height: 160px;
+  height: 150px;
   position: relative;
 }
 .container{
@@ -161,7 +161,7 @@ a {
 }
 .container .menu a{
 
-  padding-top: 2px;
+  padding-top: 30px;
 
 }
 }
