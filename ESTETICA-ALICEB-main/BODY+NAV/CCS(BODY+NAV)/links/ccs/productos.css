@@ -7,11 +7,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat Alternates', sans-serif;
 }
-.row .product-box{
-   display: grid;
-   gap: 3px;
-   align-items: center;
-}
+
  .product-inner-box .icons{
     display: flex;
     left: 160px;
@@ -95,5 +91,17 @@ h2{
    font-size: 20px;
 }
 
+@media(max-width: 767px){
+  .row{
+   display: grid;
+   gap: 3px;
+   grid-template-columns: auto auto;
+                        
+ 
+} 
+h2{
+   margin-left: 50px;
+}
+}
 
  
