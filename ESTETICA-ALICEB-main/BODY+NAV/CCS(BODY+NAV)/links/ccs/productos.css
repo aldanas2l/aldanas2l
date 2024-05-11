@@ -1,17 +1,21 @@
-
-body
-   { 
-      display: flex; 
-      align-items: center;
-    min-height: 100vh;
-
-  }
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.row .product-box{
+   display: grid;
+   gap: 3px;
+   align-items: center;
+}
  .product-inner-box .icons{
     display: flex;
     left: 160px;
     flex-direction: column;
-    gap: 4px; 
     transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
     position: absolute;
     opacity: 0;
