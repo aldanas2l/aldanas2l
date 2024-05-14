@@ -95,8 +95,8 @@ body{
 .cont-menu{
   width: 300px;
   max-width:500px;
-  background:#340419;
-  height: 1000px;
+  background:#964e6de8;
+  height: 600px;
   position: relative;
   transition: all 500ms ease;
   transform: translateX(-100%);
