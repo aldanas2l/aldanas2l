@@ -16,6 +16,7 @@ label{
     font-family: 'calibri';
     color: white;
     box-shadow: 1px 13px 37px #ad75df;
+    display: flex;
 }
 .form-registro .control {
     width: 100%;
