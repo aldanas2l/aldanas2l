@@ -4,6 +4,6 @@ var cards = document.querySelectorAll('.product-box');
 card.classList.add('is-hover');
    } )
    card.addEventListener('mouseleave',function(){
-    card.classList.remove('is-hover');
-       } )
+card.classList.remove('is-hover');
+} )
 });
