@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+/* Estilos del encabezado del NAV.HTML INICIO.CSS */
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+  background: #fefefe
+}
+.capa{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  top: 0;left: 0;
+}
+
+.header{
+  background: linear-gradient(120deg,#d595c8,rgba(247, 146, 201, 0.644));
+  width: auto;
+  height: 90px;
+  top: 0;left: 0;
+
+
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin:0%; 
+
+}
+.container .btn-menu, .logo{
+  float: left;
+  line-height:100px;
+}
+.container .btn-menu label{
+  color: #ffffff;
+  font-size: 35px;
+  cursor: pointer;
+
+}
+.logo h1{
+  color: hsl(333, 64%, 63%);
+  font-weight: 900;
+  font-size: 18px;
+  margin-left: 50px;
+ letter-spacing:4px;
+ padding-top: 35px;
+
+ 
+}
+.container .menu{
+  float: right;
+  line-height: 100px;
+}
+.container .menu a{
+  display: inline-block;
+
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 13px;
+  margin-right: 5px;
+}
+.container .menu a:hover{
+  border-bottom: 2px solid #f77d7d;
+  padding-bottom: 5px;
+}
+
+#btn-menu{
+  display: none;
+}
+.container-menu{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+  opacity: 1;
+  visibility: visible;
+  z-index:10;
+
+}
+.cont-menu{
+  width: 300px;
+  max-width:500px;
+  background:#964e6de8;
+  height: 600px;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+  transform: translateX(0%);
+}
+.cont-menu nav{
+  transform: translateY(15%);
+}
+.cont-menu nav a{
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #ffffff;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+  border-left: 5px solid #c7c7c7;
+  background: #e77dbf;
+}
+.cont-menu label{
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #df84a7;
+  cursor: pointer;
+  font-size: 20px;
+}
+@media(max-width:850px){
+a {
+  font-size: 15px;
+
+}
+
+.header{
+  width: auto;
+  height: 150px;
+  position: relative;
+}
+.container{
+  width: 90%;
+  max-width: 400px;
+}
+.logo h1{
+  color: hsl(333, 64%, 63%);
+  font-size: 18px;
+  margin-left: 10px;
+ letter-spacing:4px;
+ padding-top: 40px;
+}
+.container .menu{
+  float: right;
+  line-height: 10px;
+}
+.container .btn-menu label{
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+
+}
+.container .menu a{
+
+  padding-top: 30px;
+
+}
+}
+  
+  /**SISTEMA DE TURNOS **/
+
+body{
+    color: linear-gradient(120deg,#d595c8,rgba(247, 146, 201, 0.644));
+ }
+ h4{
+     color: #da7ec8;
+ }
+ label{
+     color: #d69dd6;
+ }
+ .form-registro {
+     width: 400px;
+     padding: 40px;
+     margin: auto;
+     margin-top: 2%;
+     border-radius: 1px;
+     font-family: 'calibri';
+     color: white;
+     box-shadow: 1px 13px 37px #ad75df;
+     display: flex;
+ }
+ .form-registro .control {
+     width: 100%;
+     background: #fbeafd;
+     padding: 10px;
+     border-radius: 2px;
+     margin-bottom: 20px;
+     border: 1px solid #b94f76;
+     font-family: 'calibri';
+     font-size: 18px;
+ }
+ .form-registro .boton {
+     width: 100%;
+     background: #dd17a2;
+     border: none;
+     padding: 12px;
+     color: white;
+     margin: 16px 0;
+     font-size: 16px;
+ }
