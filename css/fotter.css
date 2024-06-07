@@ -4,9 +4,11 @@
 * {
     margin: 0;
     padding: 0;
-    color: #78056b;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+span{
+    color: #ae4096;
 }
 
 .content1 {
@@ -167,16 +169,20 @@ footer {
     font-weight: 500;
     cursor: pointer;
     transition: .3s;
+    border-radius: 4px;
+    padding: 5px;
 }
 
+
 .right form .btn button:hover {
-    background: #000;
+    background: #ff52a3;
+    border-radius: 4px;
 }
 
 .bottom center {
     padding: 5px;
     font-size: 0.9375rem;
-    background: #151515;
+    background: #a61616;
 }
 
 .bottom center span {

@@ -6,9 +6,10 @@ img{
    object-fit: cover;
    margin: 2%;
 }
-h1{
+.Titulo{
     margin-top: 2%;
     margin-left: 2%;
+    text-shadow: rgb(255, 136, 213) 3px 3px 5px;
 }
  
 @media(max-width: 750px){

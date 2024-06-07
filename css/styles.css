@@ -13,8 +13,8 @@
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
-    box-shadow: 7px 13px 37px #f0e6ef;
-   display: flex;
+    box-shadow: 10px 10px 20px 10px #f0e6ef ;
+display: flex;
 }
 
 .form-registro h4 {

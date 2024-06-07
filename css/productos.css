@@ -90,30 +90,29 @@ align-items:center;
 opacity: 1;
 }
 h2{
-   text-align: center;
+  text-align: center;
 }
 .product-name h3{
-   font-size: 20px;
+font-size: 20px;
 }
 
- 
 @media(max-width: 600px){
   .row{
    display: grid;
    gap: 3px;
    grid-template-columns: auto auto;
-} 
+}
 h2{
-   margin-left: 50px;
+margin-left: 50px;
 }
 .product-inner-box .icons{
-   display: flex;
-   left: 130px;
-   flex-direction: column;
+display: flex;
+left: 130px;
+flex-direction: column;
 }
 .cart-btn button{
-   font-size: 10px;
+font-size: 10px;
 }
 }
 
- 
+
