@@ -2,22 +2,21 @@
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-	background: #E5E5E5;
-}
 
 main {
-	max-width: 800px;
-	width: 90%;
-	margin: auto;
+	width: 600px;
 	padding: 40px;
+	margin: 20px;
+	padding: 40px;
+	display: flex;
 }
 
 .formulario {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+	padding: 5px;
+	border-radius: 1px;
+	font-family: 'calibri';
+	color: rgb(0, 0, 0);
+	box-shadow: 1px 13px 37px #ad75df;
 }
 
 .formulario__label {
@@ -33,8 +32,8 @@ main {
 
 .formulario__input {
 	width: 100%;
-	background: #fff;
-	border: 3px solid transparent;
+	background: #ffffff;
+	border: 3px solid #ffaac3;
 	border-radius: 3px;
 	height: 45px;
 	line-height: 45px;
@@ -43,7 +42,7 @@ main {
 }
 
 .formulario__input:focus {
-	border: 3px solid #0075FF;
+	border: 3px solid #ffaac3;
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
@@ -84,10 +83,13 @@ main {
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
+	font-size: 12px;
 }
 
 .formulario__mensaje-activo {
 	display: block;
+	
+	
 }
 
 .formulario__mensaje p {
@@ -111,6 +113,8 @@ main {
 	border-radius: 3px;
 	cursor: pointer;
 	transition: .1s ease all;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .formulario__btn:hover {
@@ -127,7 +131,7 @@ main {
 	display: block;
 }
 
-/* ----- -----  Estilos para Validacion ----- ----- */
+/*  Validacion ----- ----- */
 .formulario__grupo-correcto .formulario__validacion-estado {
 	color: #1ed12d;
 	opacity: 1;
@@ -144,22 +148,7 @@ main {
 
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid #bb2929;
+
 }
 
 
-/* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
-	.formulario {
-		grid-template-columns: 1fr;
-	}
-
-	.formulario__grupo-terminos, 
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
-	}
-
-	.formulario__btn {
-		width: 100%;
-	}
-}
