@@ -57,13 +57,11 @@ inputs.forEach(function(input) {
 
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
-
     var terminos = document.getElementById('terminos');
     if (campos.nombre && campos.apellido && campos.edad && campos.telefono && terminos.checked) {
-        formulario.reset();
+		window.location.href = '/index.html';
     } else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
     }
 });
-
 
