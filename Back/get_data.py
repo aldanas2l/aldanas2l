@@ -12,6 +12,11 @@ def get_connection():
         )
         cursor = connection.cursor()
         print("Conexión exitosa")
+        query= "SELECT * FROM reservas"
+        cursor.execute(query)
+        results = cursor.fetchall()
+        for row in results:
+            print(row)
 
     except mysql.connector.Error as err:
         print(f"Error: {err}")
