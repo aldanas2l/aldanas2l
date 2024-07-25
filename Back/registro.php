@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consulta db</title>
     <style type="text/css">
-     
+
       table {
         border: solid 2px #7e7c7c;
         border-collapse: collapse;
       }
-     
+
       th, h1 {
         background-color: #edf797;
       }
@@ -26,7 +26,7 @@
     </style>
 </head>
 <body>
-    
+
 </body>
 </html>
 
@@ -44,7 +44,7 @@ $edad=$_POST["edad"];
 $telefono=$_POST["telefono"];
 if(!$connection)
         {
-            echo "No se ha podido conectar con el servidor" . mysql_error();
+            echo "No se ha podido conectar con el servidor";
         }
   else
         {
