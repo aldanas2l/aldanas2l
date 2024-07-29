@@ -56,12 +56,28 @@ inputs.forEach(function(input) {
 });
 
 formulario.addEventListener('submit', function(e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevenir el envío estándar del formulario
+
     var terminos = document.getElementById('terminos');
     if (campos.nombre && campos.apellido && campos.edad && campos.telefono && terminos.checked) {
-		window.location.href = '/index.html';
+        // Crear un objeto FormData con los datos del formulario
+        var formData = new FormData(formulario);
+
+        // Enviar los datos al archivo PHP
+        fetch('/Back/registro.php"', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Procesar la respuesta del servidor aquívz
+            console.log('Success:', data);
+            // Puedes redirigir a otra página si es necesario
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
     } else {
-		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
     }
 });
-
