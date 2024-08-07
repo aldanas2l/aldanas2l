@@ -36,41 +36,48 @@ $pass = "";
 $host = "localhost";
 
 $connection = mysqli_connect($host, $user, $pass);
+
+if (!$connection) {
+    die("No se ha podido conectar con el servidor: " . mysqli_connect_error());
+} else {
+    echo "<b><h3>Hemos conectado al servidor</h3></b>";
+}
+
+// Nombre de la base datos
+$datab = "multifacetic";
+
+// Indicamos seleccionar la base de datos
+$db = mysqli_select_db($connection, $datab);
+
+if (!$db) {
+    die("No se ha podido encontrar la base de datos: " . mysqli_error($connection));
+} else {
+    echo "<h3>Base de datos seleccionada:</h3>";
+}
+
 $nombre = $_POST["nombre"];
 $apellido = $_POST["apellido"];
 $edad = $_POST["edad"];
 $telefono = $_POST["telefono"];
 
-if (!$connection) {
-    echo "No se ha podido conectar con el servidor";
-} else {
-    echo "<b><h3>Hemos conectado al servidor</h3></b>";
-}
-
-// nombre de la base datos
-$datab = "multifacetic";
-//indicamos seleccionar la base datos
-$db = mysqli_select_db($connection, $datab);
-
-if (!$db) {
-    echo "No se ha podido encontrar la Tabla";
-} else {
-    echo "<h3>Tabla seleccionada:</h3>";
-}
-
-//insertamos datos de registro al mysql xamp, indicando nombre de la tabla y sus atributos
+// Insertamos datos de registro al MySQL indicando nombre de la tabla y sus atributos
 $instruccion_SQL = "INSERT INTO reservas (nombre, apellido, edad, telefono) VALUES ('$nombre', '$apellido', '$edad', '$telefono')";
 $resultado = mysqli_query($connection, $instruccion_SQL);
+
+if (!$resultado) {
+    die("Error al insertar datos: " . mysqli_error($connection));
+}
 
 $consulta = "SELECT * FROM reservas";
 
 $result = mysqli_query($connection, $consulta);
 if (!$result) {
-    echo "No se ha podido realizar la consulta";
+    die("No se ha podido realizar la consulta: " . mysqli_error($connection));
 }
+
 echo "<table>";
 echo "<tr>";
-echo "<th><h1>id</th></h1>";
+echo "<th><h1>Id</th></h1>";
 echo "<th><h1>Nombre</th></h1>";
 echo "<th><h1>Apellido</th></h1>";
 echo "<th><h1>Edad</th></h1>";
