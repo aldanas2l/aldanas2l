@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/0910ee48a1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/Turnos.css">
+	<link rel="stylesheet" href="/reservas/css/reservas.css">
+	<link rel="stylesheet" href="/css/fotter.css">
+	<link rel="stylesheet" href="/Back/registro.php">
+	<link rel="stylesheet" href="/Back/get_data.py">
+	<link rel="stylesheet" href="/Back/concexion.py">
+     <link rel="stylesheet" href="/ESTETICA-ALICEB-main/BARRA DE NAVEGACION/ESTILO-NAV/INICIO.css">
+	<title>ESTETICA AlICEB</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			<div class="logo">
+				<h1>ALICEB¡</h1>
+			</div>
+			<nav class="menu">
+
+				<a href="#footer">Contactanos</a>
+				<a href="/html/quienes_Somos.html">¿Quienes somos?</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a href="/index.HTML" class="active_a">Promociones</a>
+				<a href="/html/productos.html">Productos</a>
+				<a href="/html/tratamientos.html">Tratamientos Faciales</a>
+				<a href="/html/depilacion.html">Depilacion definitiva</a>
+				<a href="/html/makeupyuñas.html">MakeUp y Uñas</a>
+				<a href="/html/cejas.html">Pestañas y perfilado</a>
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+	<section>
+		<h1 class="Titulo">PERFILADO DE CEJAS</h1>
+		<img src="/fotos/Perfilado.jpg" alt="Perfilado">
+	</section>
+	<section class="form-registro">
+		<main>
+			<form action="/validar" class="formulario" id="formulario" method="POST">
+				<h1>Reserva tu turno</h1>
+				<!-- Nombre -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Nombre</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Su nombre" maxlength="30">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El nombre no debe tener símbolos o números.</p>
+				</div>
+	
+				<!-- Apellido -->
+				<div class="formulario__grupo" id="grupo__apellido">
+					<label for="apellido" class="formulario__label">Apellido</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Su apellido" maxlength="30">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El apellido no debe tener símbolos o números.</p>
+				</div>
+	
+				<!-- Edad -->
+				<div class="formulario__grupo" id="grupo__edad">
+					<label for="edad" class="formulario__label">Edad</label>
+					<div class="formulario__grupo-input">
+						<input type="number" class="formulario__input" name="edad" id="edad" placeholder="Su edad">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Debe ingresar la edad correctamente.</p>
+				</div>
+	
+				<!-- Teléfono -->
+				<div class="formulario__grupo" id="grupo__telefono">
+					<label for="telefono" class="formulario__label">Teléfono</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567" maxlength="14">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14 dígitos.</p>
+				</div>
+	
+				<!-- Términos y Condiciones -->
+				<div class="formulario__grupo" id="grupo__terminos">
+					<label class="formulario__label">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+						Acepto los Términos y Condiciones
+					</label>
+				</div>
+	
+				<!-- Mensaje de error -->
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, rellena el formulario correctamente.</p>
+				</div>
+
+				<!-- Botón de enviar -->
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button type="submit" class="formulario__btn">Enviar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+				</div>
+				<div id="grupo__nombre" class="formulario__grupo">
+					<input type="text" name="nombre" id="nombre">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					<p class="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
+				</div>
+				<div id="grupo__apellido" class="formulario__grupo">
+					<input type="text" name="apellido" id="apellido">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					<p class="formulario__input-error">El apellido solo puede contener letras y espacios.</p>
+				</div>
+				<div id="grupo__edad" class="formulario__grupo">
+					<input type="number" name="edad" id="edad">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					<p class="formulario__input-error">La edad debe ser un número entre 1 y 3 dígitos.</p>
+				</div>
+				<div id="grupo__telefono" class="formulario__grupo">
+					<input type="text" name="telefono" id="telefono">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					<p class="formulario__input-error">El teléfono solo puede contener números y algunos caracteres especiales.</p>
+				</div>
+				
+			</form>
+		</main>
+	</section>
+
+		<script src="/js/productos.js"></script>
+		<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+	</section>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<script src="/ESTETICA-ALICEB-main/BODY+NAV/CCS(BODY+NAV)/links/JS/productos.js"></script>
+	<script src="/js/validacionFormularios.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+	<footer id="footer">
+
+		<div class="main-content">
+			<div class="left box">
+				<h2>ALICEB</h2>
+				<div class="content">
+					<p>estetica aliceb</p>
+					<p>preguntas frecuentes??</p>
+					<div class="social">
+						<a target="_blank" href="#"><span class="fab fa-facebook-f"></span></a>
+						<a target="_blank" href="#"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="#"><span class="fab fa-instagram"></span></a>
+						<a target="_blank" href="#"><span class="fab fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="center box">
+				<h2>Ubicación</h2>
+				<div class="content">
+					<div class="place">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">Gualeguay, Entre Rios, Argentina</span>
+					</div>
+					<div class="phone">
+						<span class="fas fa-phone-alt"></span>
+						<span class="text">+54 11-2389-0393</span>
+					</div>
+					<div class="email">
+						<span class="fas fa-envelope"></span>
+						<span class="text">estetica-aliceb@gmail.com</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="right box">
+				<h2>Contacto</h2>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<div class="text">Email *</div>
+							<input type="email" required>
+						</div>
+						<div class="msg">
+							<div class="text">Mensaje *</div>
+							<textarea rows="2" cols="25" required></textarea>
+						</div>
+						<div class="btn">
+							<button type="submit">Enviar Mensaje</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/0910ee48a1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/Turnos.css">
+	<link rel="stylesheet" href="/reservas/css/reservas.css">
+	<link rel="stylesheet" href="/css/fotter.css">
+	<link rel="stylesheet" href="/Back/registro.php">
+     <link rel="stylesheet" href="/ESTETICA-ALICEB-main/BARRA DE NAVEGACION/ESTILO-NAV/INICIO.css">
+	<title>ESTETICA AlICEB</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			<div class="logo">
+				<h1>ALICEB¡</h1>
+			</div>
+			<nav class="menu">
+
+				<a href="#footer">Contactanos</a>
+				<a href="/html/quienes_Somos.html">¿Quienes somos?</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a href="/index.HTML" class="active_a">Promociones</a>
+				<a href="/html/productos.html">Productos</a>
+				<a href="/html/tratamientos.html">Tratamientos Faciales</a>
+				<a href="/html/depilacion.html">Depilacion definitiva</a>
+				<a href="/html/makeupyuñas.html">MakeUp y Uñas</a>
+				<a href="/html/cejas.html">Pestañas y perfilado</a>
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+	<section>
+		<h1 class="Titulo">PERFILADO DE CEJAS</h1>
+		<img src="/fotos/Perfilado.jpg" alt="Perfilado">
+	</section>
+	<section class="form-registro">
+		<main>
+			<form action="/validar" class="formulario" id="formulario" method="post">
+				<h1>Reserva tu turno</h1>
+	
+				<!-- Nombre -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Nombre</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Su nombre" maxlength="30">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El nombre no debe tener símbolos o números.</p>
+				</div>
+	
+				<!-- Apellido -->
+				<div class="formulario__grupo" id="grupo__apellido">
+					<label for="apellido" class="formulario__label">Apellido</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Su apellido" maxlength="30">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El apellido no debe tener símbolos o números.</p>
+				</div>
+	
+				<!-- Edad -->
+				<div class="formulario__grupo" id="grupo__edad">
+					<label for="edad" class="formulario__label">Edad</label>
+					<div class="formulario__grupo-input">
+						<input type="number" class="formulario__input" name="edad" id="edad" placeholder="Su edad">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">Debe ingresar la edad correctamente.</p>
+				</div>
+	
+				<!-- Teléfono -->
+				<div class="formulario__grupo" id="grupo__telefono">
+					<label for="telefono" class="formulario__label">Teléfono</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567" maxlength="14">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14 dígitos.</p>
+				</div>
+	
+				<!-- Términos y Condiciones -->
+				<div class="formulario__grupo" id="grupo__terminos">
+					<label class="formulario__label">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+						Acepto los Términos y Condiciones
+					</label>
+				</div>
+	
+				<!-- Mensaje de error -->
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, rellena el formulario correctamente.</p>
+				</div>
+
+				<!-- Botón de enviar -->
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button type="submit" value="registrar" class="formulario__btn">Enviar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+				</div>
+			</form>
+		</main>
+	</section>
