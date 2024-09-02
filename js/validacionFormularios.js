@@ -59,12 +59,12 @@ inputs.forEach(function(input) {
 });
 
 document.getElementById('formulario').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevenir el envío estándar del formulario
+    e.preventDefault();
 
     var terminos = document.getElementById('terminos');
 
     if (campos.nombre && campos.apellido && campos.edad && campos.telefono && terminos.checked) {
-        // Crear un objeto FormData con los datos del formulario
+
         var formData = new FormData(document.getElementById('formulario'));
 
     } else {

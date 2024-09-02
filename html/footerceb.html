@@ -33,10 +33,6 @@
                 <span class="fas fa-phone-alt"></span>
                 <span class="text">+54 11-2389-0393</span>
               </div>
-              <div class="email">
-                <span class="fas fa-envelope"></span>
-                <span class="text">estetica-aliceb@gmail.com</span>
-              </div>
             </div>
           </div>
 
@@ -44,17 +40,22 @@
             <h2>Contacto</h2>
             <div class="content">
               <form action="#">
-                <div class="email">
-                  <div class="text">Email *</div>
-                  <input type="email" required>
+                <div class="content">
+                  <form action="#">
+                    <div class="email">
+                      <span class="fas fa-envelope"></span>
+                      <a href="#" onclick="openGmail()" class="text">esteticaaliceb@gmail.com</a>
+                    </div>
+                  </form>
                 </div>
-                <div class="msg">
-                  <div class="text">Mensaje *</div>
-                  <textarea rows="2" cols="25" required></textarea>
-                </div>
-                <div class="btn">
-                  <button type="submit">Enviar Mensaje</button>
-                </div>
+              </div>
+              <script>
+                function openGmail() {
+                  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=esteticaaliceb@gmail.com&su=Contacto%20desde%20la%20web`;
+                  window.open(gmailLink, '_blank');
+                }
+              </script>
+          
               </form>
             </div>
           </div>

@@ -8,16 +8,20 @@ let conexion = mysql.createConnection({
     user: "root",
     password: ""
 });
-
+//config vistas
 app.set("view engine", "ejs");
+
+
+
 //
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 app.get("/", function (req, res) {
-    res.render("registro_turno");
+    res.render("turnoscejasyperfilados");
 });
 
+app.use(express.static("public"));
 app.post("/validar",function (req, res) {
     const datos= req.body;
 
