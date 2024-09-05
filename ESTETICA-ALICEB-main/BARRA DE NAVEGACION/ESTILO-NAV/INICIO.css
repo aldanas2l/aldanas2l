@@ -35,7 +35,7 @@ body{
 }
 .container .btn-menu, .logo{
   float: left;
-  line-height:100px;
+  line-height:70px;
 }
 .container .btn-menu label{
   color: #ffffff;
@@ -135,7 +135,7 @@ a {
 
 .header{
   width: auto;
-  height: 150px;
+  height: 200px;
   position: relative;
 }
 .container{

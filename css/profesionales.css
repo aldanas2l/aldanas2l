@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+p {
+    color: #92C7A3;
+}
+
+a {
+    position: relative;
+}
+
+
+
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+.grid { 
+    display: grid;
+    margin: 2% 10%;
+    grid-template-columns: auto auto auto;         
+    row-gap: 40px; 
+}
+
+.container2 {
+    object-fit: cover;
+    padding-right: 30px;   
+    background-color: #d7d71b00;
+    justify-content: space-evenly;
+}
+
+.conteiner2, .destino {
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container2, .front {
+    transform: perspective(600) rotateY(0deg);
+    box-shadow: 0 5px 20px #fe78d8;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 230px;
+    height: 300px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 .front h3 {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #7c0e41;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center; 
+}  
+
+.container2 .back {
+    transform: perspective(600px) rotateY(180deg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    text-align: center;
+    box-shadow: 0 5px 20px #000;
+}
+
+.container2 .back .link {
+    border-top: solid 2px rgb(255, 255, 255);
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #000;
+} 
+
+
+.container2 .back .link a {
+    color: #fff6f6;
+} 
+
+.container2 .back h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.container2 .back p {
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.container2:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.container2:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+@media (max-width: 1100px) {
+    
+    .grid {
+        grid-template-columns: auto auto;
+            display: grid;
+            
+        }
+    }
+    .container2:hover{
+        justify-content: space-evenly;
+
+     
+    }
+  
+
+@media(max-width: 700px) {
+    .quinceañeras{
+     
+        font-size: 20px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        margin-top: 20%;
+    }
+    .container2{
+        width: 260px;
+        height: 280px;
+    }
+    .conteiner2, .destino {
+        width: 261px;
+        height: 280px;
+        backface-visibility: hidden;
+        transition: 0.5s;
+    }
+  
+    .container2 .back .link{
+        border-top: solid 2px rgb(255, 255, 255);
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    } 
+    
+
+}
