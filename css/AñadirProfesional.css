@@ -1,38 +1,30 @@
 * {
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-img {
-	width: 200px; /* Cambia solo el ancho */
-	height: auto; /* La altura se ajustará automáticamente */
-	margin: 10%;
-	display: flex;
-  }
-  
-  main {
+main {
 	padding: 40px;
 	margin: 20px;
 	padding: 40px;
 	display: flex;
 }
 
-h1{
-text-align: center;
-}
 .formulario {
-	padding: 5px;
-	border-radius: 1px;
-	font-family: 'calibri';
-	color: rgb(0, 0, 0);
-	box-shadow: 1px 13px 37px #ad75df;
+    width: 600px;
+    padding: 5px;
+    border-radius: 1px;
+    font-family: 'calibri';
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 13px 37px #ad75df;
+    margin: 0 auto; /* Esto centra horizontalmente */
 }
+
 
 .formulario__label {
 	display: block;
 	font-weight: 700;
 	padding: 10px;
 	cursor: pointer;
-
 }
 
 .formulario__grupo-input {
@@ -161,27 +153,20 @@ text-align: center;
 }
 
 
-
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
-	
-	h1{
-		text-align: center;
-		font-size: 30px;
-		}
-    .main {
-        width: 300px; /* Cambia el tamaño a 100% del contenedor */
+    .formulario {
+        width: 100%; /* Cambia el tamaño a 100% del contenedor */
         padding: 10px; /* Aumenta el padding si es necesario */
     }
 }
 
 @media (max-width: 480px) {
-	h1{
-		text-align: center;
-		font-size: 30px;
-		}
     .formulario {
         width: 90%; /* Ajusta aún más el tamaño para pantallas móviles pequeñas */
         padding: 15px;
     }
 }
+
+
+

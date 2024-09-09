@@ -1,20 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-p {
-    color: #92C7A3;
-}
 
 a {
     position: relative;
 }
-
-
-
-
 body {
     align-items: center;
     justify-content: center;
@@ -45,7 +32,7 @@ body {
 
 .container2, .front {
     transform: perspective(600) rotateY(0deg);
-    box-shadow: 0 5px 20px #fe78d8;
+    box-shadow: 0 5px 20px #ca90b9;
     font-family: Arial, Helvetica, sans-serif;
     width: 230px;
     height: 300px;
@@ -62,7 +49,7 @@ img {
     width: 100%;
     height: 45px;
     line-height: 45px;
-    color: #7c0e41;
+    color: #ffffff;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
     text-align: center; 
@@ -80,7 +67,7 @@ img {
 }
 
 .container2 .back .link {
-    border-top: solid 2px rgb(255, 255, 255);
+    border-top: solid 2px rgb(0, 0, 0);
     height: 50px;
     line-height: 50px;
     font-size: 20px;
@@ -89,7 +76,7 @@ img {
 
 
 .container2 .back .link a {
-    color: #fff6f6;
+    color: #080606;
 } 
 
 .container2 .back h3 {
@@ -150,7 +137,7 @@ img {
     }
   
     .container2 .back .link{
-        border-top: solid 2px rgb(255, 255, 255);
+        border-top: solid 2px rgb(0, 0, 0);
         height: 50px;
         line-height: 50px;
         font-size: 20px;

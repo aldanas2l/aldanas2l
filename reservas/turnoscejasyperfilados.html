@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,10 +47,12 @@
 	</div>
 	<section>
 		<h1 class="Titulo">PERFILADO DE CEJAS</h1>
-		<img src="/fotos/Perfilado.jpg" alt="Perfilado">
+		
 	</section>
 	<section class="form-registro">
+		
 		<main>
+		
 			<form action="/validar" class="formulario" id="formulario" method="POST">
 				<h1>Reserva tu turno</h1>
 				<!-- Nombre -->
@@ -112,29 +113,10 @@
 					<button type="submit" class="formulario__btn">Enviar</button>
 					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
 				</div>
-				<div id="grupo__nombre" class="formulario__grupo">
-					<input type="text" name="nombre" id="nombre">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<p class="formulario__input-error">El nombre solo puede contener letras y espacios.</p>
-				</div>
-				<div id="grupo__apellido" class="formulario__grupo">
-					<input type="text" name="apellido" id="apellido">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<p class="formulario__input-error">El apellido solo puede contener letras y espacios.</p>
-				</div>
-				<div id="grupo__edad" class="formulario__grupo">
-					<input type="number" name="edad" id="edad">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<p class="formulario__input-error">La edad debe ser un número entre 1 y 3 dígitos.</p>
-				</div>
-				<div id="grupo__telefono" class="formulario__grupo">
-					<input type="text" name="telefono" id="telefono">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
-					<p class="formulario__input-error">El teléfono solo puede contener números y algunos caracteres especiales.</p>
-				</div>
-				
+
 			</form>
 		</main>
+
 	</section>
 
 		<script src="/js/productos.js"></script>
