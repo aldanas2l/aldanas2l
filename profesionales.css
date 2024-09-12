@@ -32,7 +32,7 @@ body {
 
 .container2, .front {
     transform: perspective(600) rotateY(0deg);
-    box-shadow: 0 5px 20px #ca90b9;
+    box-shadow: 0 5px 20px #ffe3f7;
     font-family: Arial, Helvetica, sans-serif;
     width: 230px;
     height: 300px;
@@ -124,6 +124,7 @@ img {
         grid-template-columns: auto;
         align-items: center;
         margin-top: 20%;
+        margin-left: 20%;
     }
     .container2{
         width: 260px;

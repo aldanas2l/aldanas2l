@@ -45,6 +45,12 @@
 			<label for="btn-menu">✖️</label>
 		</div>
 	</div>
+	<style>
+        .confirmado {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
 	<section>
 		<h1 class="Titulo">PERFILADO DE CEJAS</h1>
 		
@@ -94,15 +100,7 @@
 					</div>
 					<p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 14 dígitos.</p>
 				</div>
-	
-				<!-- Términos y Condiciones -->
-				<div class="formulario__grupo" id="grupo__terminos">
-					<label class="formulario__label">
-						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-						Acepto los Términos y Condiciones
-					</label>
-				</div>
-	
+
 				<!-- Mensaje de error -->
 				<div class="formulario__mensaje" id="formulario__mensaje">
 					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, rellena el formulario correctamente.</p>
@@ -110,7 +108,8 @@
 
 				<!-- Botón de enviar -->
 				<div class="formulario__grupo formulario__grupo-btn-enviar">
-					<button type="submit" class="formulario__btn">Enviar</button>
+					<button type="submit" class="formulario__btn">confirmar
+					</button>
 					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
 				</div>
 
@@ -119,7 +118,24 @@
 
 	</section>
 
-		<script src="/js/productos.js"></script>
+<script>	
+// Recuperar datos del localStorage
+const fecha = localStorage.getItem('fechaReserva');
+const horario = localStorage.getItem('horarioReserva');
+
+// Mostrar mensaje
+const mensaje = document.getElementById('mensaje');
+if (fecha && horario) {
+    mensaje.innerText = `Reserva confirmada para el día ${fecha} a las ${horario}.`;
+    mensaje.classList.add('confirmado');
+} else {
+    mensaje.innerText = 'No se ha realizado ninguna reserva.';
+}
+
+// Limpiar localStorage después de mostrar el mensaje
+localStorage.removeItem('fechaReserva');
+localStorage.removeItem('horarioReserva');
+</script>
 		<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
 	</section>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.h1-r, .h2-r {
+    text-align: center;
+}
+
+#fecha {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#horarios-disponibles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.horario {
+    margin: 10px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.horario:hover {
+    background-color: #1da724;
+}
+
+.horario.seleccionado {
+    background-color: #ffa0d4;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #0b0009;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #262729;
+}
+button.confirmado {
+    background-color: #a72857; 
+}

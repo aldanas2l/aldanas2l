@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Turno</title> 
+    <script src="https://kit.fontawesome.com/0910ee48a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Turnos.css">
+    <link rel="stylesheet" href="/css/fotter.css">
+    <link rel="stylesheet" href="/ESTETICA-ALICEB-main/BARRA DE NAVEGACION/ESTILO-NAV/INICIO.css">
+    <link rel="stylesheet" href="/css/horarios.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <h1>ALICEB¡</h1>
+            </div>
+            <nav class="menu">
+                <a href="#footer">Contáctanos</a>
+                <a href="/html/profesionales.html">¿Quiénes somos?</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="#" class="active_a">Promociones</a>
+                <a href="/html/productos.html">Productos</a>
+                <a href="/html/tratamientos.html">Tratamientos Faciales</a>
+                <a href="/html/depilacion.html">Depilación definitiva</a>
+                <a href="/html/makeupyuñas.html">MakeUp y Uñas</a>
+                <a href="/html/cejas.html">Pestañas y perfilado</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <h1 class="h1-r">Reserva tu Turno</h1>
+    <h2 class="h2-r">Selecciona una fecha:</h2>
+    <br>
+    <!-- Selector de fecha -->
+    <input type="date" id="fecha" name="fecha">
+
+    <!-- Selector de horarios -->
+    <div id="horarios">
+        <br>
+        <h2 class="h2-r">Selecciona un horario:</h2>
+        <div id="horarios-disponibles">
+            <!-- Horarios serán generados por JavaScript -->
+        </div>
+    </div>
+
+    <button id="reservar">Siguiente</button>
+	<script src="/js/productos.js"></script>
+    <script src="/js/horarios.js"></script>
+</body>
+</html>
+

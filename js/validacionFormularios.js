@@ -63,7 +63,7 @@ document.getElementById('formulario').addEventListener('submit', function(e) {
 
     var terminos = document.getElementById('terminos');
 
-    if (campos.nombre && campos.apellido && campos.edad && campos.telefono && terminos.checked) {
+    if (campos.nombre && campos.apellido && campos.edad && campos.telefono) {
 
         var formData = new FormData(document.getElementById('formulario'));
 
