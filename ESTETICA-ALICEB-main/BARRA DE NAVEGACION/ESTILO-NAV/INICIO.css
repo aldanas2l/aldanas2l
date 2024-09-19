@@ -157,11 +157,15 @@ a {
   color: #ffffff;
   font-size: 30px;
   cursor: pointer;
+  padding-left: 5px;
+
+
 
 }
 .container .menu a{
 
   padding-top: 30px;
+
 
 }
 }

@@ -8,7 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/css/AñadirProfesional.css">
 		<link rel="stylesheet" href="/ESTETICA-ALICEB-main/BARRA DE NAVEGACION/ESTILO-NAV/INICIO.css">
-		
+		<link rel="stylesheet" href="/css/fotter.css">
 		<link rel="stylesheet" href="/css/BODY.CSS">
 		<title>Modo Admin</title>
 	</head>
@@ -74,6 +74,60 @@
 			</form>
 		</main>
 	</section>
+	<footer id="footer">
+		<div class="main-content">
+			<div class="left box">
+				<h2>ALICEB</h2>
+				<div class="content">
+					<p>estetica aliceb</p>
+					<p>preguntas frecuentes??</p>
+					<div class="social">
+						<a target="_blank" href="#"><span class="fab fa-facebook-f"></span></a>
+						<a target="_blank" href="#"><span class="fab fa-twitter"></span></a>
+						<a target="_blank" href="#"><span class="fab fa-instagram"></span></a>
+						<a target="_blank" href="#"><span class="fab fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="center box">
+				<h2>Ubicación</h2>
+				<div class="content">
+					<div class="place">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">Gualeguay, Entre Rios, Argentina</span>
+					</div>
+					<div class="phone">
+						<span class="fas fa-phone-alt"></span>
+						<span class="text">+54 11-2389-0393</span>
+					</div>
+					
+				</div>
+			</div>
+			<div class="right box">
+				<h2>Contacto</h2>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<span class="fas fa-envelope"></span>
+							<a href="#" onclick="openGmail()" class="text">esteticaaliceb@gmail.com</a>
+						</div>
+					</form>
+				</div>
+			</div>
+	
+			<script>
+				function openGmail() {
+					const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=esteticaaliceb@gmail.com&su=Contacto%20desde%20la%20web`;
+					window.open(gmailLink, '_blank');
+				}
+			</script>
+	
+				</div>
+			</div>
+		</div>
+	</footer>
+	</body>
 	<script src="/js/productos.js"></script>
 		<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	</section>
@@ -85,3 +139,4 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
+</html>
