@@ -1,6 +1,7 @@
 
 .row{
 align-items:center;
+
 }
 
  .product-inner-box .icons{
@@ -13,7 +14,12 @@ align-items:center;
     
 
  }
-
+ .product-price{
+  font-weight: 600;
+ }
+ span{
+  color: #000;
+ }
  .product-inner-box .icons a{
     width: 30px;
      height: 30px;
@@ -69,12 +75,11 @@ align-items:center;
    position: absolute;
    bottom: 12px;
    text-align: center;
-  opacity: 0;
    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
  }
  .cart-btn button {
-  font-size: 20px;
-  color: aliceblue;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7); /* Ajusta los valores para un efecto más notorio */
 }
 
@@ -83,6 +88,7 @@ opacity: 1;
 }
 h2{
   text-align: center;
+  
 }
 .product-name h3{
 font-size: 20px;
@@ -91,7 +97,7 @@ font-size: 20px;
 @media(max-width: 600px){
   .row{
    display: grid;
-   gap: 6px;
+   gap: 2px;
    grid-template-columns: auto auto;
   
 }
@@ -99,13 +105,17 @@ h2{
 margin-left: 50px;
 }
 .product-inner-box .icons{
-
 left: 120px;
 flex-direction: column;
-
 }
 .cart-btn button{
-font-size: 10px;
+font-size: 12px;
+font-weight: 600;
+}
+.cart-btn{
+  left: 2px;
+  bottom: 12px;
+  
 }
 }
 
