@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALICEB - Calendario de Citas</title>
+    <link rel="stylesheet" href="css/estilos-adm-aliceb.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- BARRA HORIZONTAL -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagen/imag2.jpg" alt="ALICEB Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                ALICEB
+            </a>
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-light me-2">
+                    <i class="fas fa-eye me-1"></i>
+                    Ver Sitio Web
+                </a>
+                <div class="dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user-circle me-1"></i>
+                        Admin
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>Perfil</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>Configuración</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="cerrarsesion.html"><i class="fas fa-sign-out-alt me-2"></i>Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- BARRA LATERAL -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse sidebar-menu">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="menu-gestion.html">
+                                <i class="fas fa-home me-2"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendario.html">
+                                <i class="fas fa-calendar-alt me-2"></i>
+                                Calendario de Citas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">
+                                <i class="fas fa-list-alt me-2"></i>
+                                Servicios Disponibles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicio-gestion.html">
+                                <i class="fas fa-plus-circle me-2"></i>
+                                Agregar Servicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cliente-gestion.html">
+                                <i class="fas fa-user-plus me-2"></i>
+                                Agregar Cliente
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clientes.html">
+                                <i class="fas fa-users me-2"></i>
+                                Lista de Clientes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profesionales.html">
+                                <i class="fas fa-user-tie me-2"></i>
+                                Administrar Personal
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- CONTENIDO CENTRAL -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Calendario de Citas</h1>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="date" class="form-control" id="fechaCalendario">
+                            <button class="btn btn-primary" type="button" id="btnBuscarFecha">
+                                <i class="fas fa-search me-2"></i>Buscar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalNuevaCita">
+                            <i class="fas fa-plus-circle me-2"></i>Nueva Cita
+                        </button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Hora</th>
+                                <th>Cliente</th>
+                                <th>Servicio</th>
+                                <th>Duración</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- CITAS DISPONIBLES -->
+                            <tr>
+                                <td>09:00</td>
+                                <td>María González</td>
+                                <td>Manicura</td>
+                                <td>60 min</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary me-1" title="Editar">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger" title="Cancelar">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- NUEVA CITA -->
+    <div class="modal fade" id="modalNuevaCita" tabindex="-1" aria-labelledby="modalNuevaCitaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalNuevaCitaLabel">Agendar Nueva Cita</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formNuevaCita">
+                        <div class="mb-3">
+                            <label for="clienteCita" class="form-label">Cliente</label>
+                            <select class="form-select" id="clienteCita" required>
+                                <option value="">Seleccione un cliente</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="servicioCita" class="form-label">Servicio</label>
+                            <select class="form-select" id="servicioCita" required>
+                                <option value="">Seleccione un servicio</option>
+                                <!-- OPCIONES SERVICIOS -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaCita" class="form-label">Fecha</label>
+                            <input type="date" class="form-control" id="fechaCita" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="horaCita" class="form-label">Hora</label>
+                            <input type="time" class="form-control" id="horaCita" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" form="formNuevaCita" class="btn btn-primary">Agendar Cita</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PIE DE PAGINA -->
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Acerca de</h5>
+                    <p>ALICEB es una estética dedicada a proporcionar servicios de belleza de alta calidad. Nuestro sistema de administración facilita la gestión eficiente de citas, servicios y clientes.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Inicio</a></li>
+                        <li><a href="#" class="text-light">Servicios</a></li>
+                        <li><a href="#" class="text-light">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contáctanos</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Gualeguay, Entre Ríos, Argentina</li>
+                        <li><i class="fas fa-phone me-2"></i> (11) 2389-0393</li>
+                        <li><i class="fas fa-envelope me-2"></i> estetica-aliceb@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 ALICEB. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
